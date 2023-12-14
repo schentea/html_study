@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>20231114 수업 내용</title>
+    <!-- 내부 스타일 시트, 리스트 스타일 추가 -->
+    <style>
+        /* 태그 명 {속성 명 : 속성 값; 속성 명 : 속성 값; ...} */
+        li {
+            list-style-type : none;
+            display : inline-block;
+            font-weight : bold;
+            color : white;
+            background-color : black;
+            margin-right: 20px; /* 바깥 여백 */
+            padding : 10px; /* 안쪽 여백 */
+
+        }
+        
+        body {
+            background-color : yellowgreen;
+        }
+        
+        table {
+            border-collapse: collapse; /* 테이블 테두리 병합 */
+        }
+
+        th, td, tr {
+            border: 1px solid white;
+            width: 100px; 
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- li태그 : 목록 태그 ( ol ) -->
+    <ol>
+        <li>모집과정</li>
+        <li>입학상담</li>
+        <li>과정소개</li>
+        <li>취업센터</li>
+        <li>커뮤니티</li>
+        <li>학교소개</li>
+    </ol>
+    <!-- li태그 : 목록 태그 ( ul ) -->
+    <ul>
+        <li>모집과정</li>
+        <li>입학상담</li>
+        <li>과정소개</li>
+        <li>취업센터</li>
+        <li>커뮤니티</li>
+        <li>학교소개</li>
+    </ul>
+    <!-- table : 테이블 태그 -->
+    <table>
+        <tr>
+            <td  >1행 1열</td>
+            <td >1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr >
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+            <td >3행 3열</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>이름</td>
+            <td></td>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <tr>
+            <td rowspan ="2">1행 1열 + 2행 1열</td>
+            <td colspan="2">1행 2열 + 1행 3열</td>
+            
+        </tr>
+        <tr>
+            <td>2행 2열</td>
+            <td rowspan="2">2행 3열 + 3행 3열</td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">3행 1열 + 3행 2열</td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <tr>
+            <th>방이름</th>
+            <th>방이름</th>
+            <th>방이름</th>
+            <th>방이름</th>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td rowspan="3">2행 3열</td>
+            <td rowspan="4">2행 4열</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3행 1열</td>
+            <td>3행 2열</td>
+            
+        </tr>
+        <tr>
+            <td>4행 2열</td>
+        </tr>
+        <tr>
+            <td>5행 1열</td>
+            <td>5행 2열</td>
+            <td>5행 3열</td>
+        </tr>
+        <tr>
+            <td colspan="4">6행 1열</td>
+        </tr>
+    </table>
+</body>
+</html>

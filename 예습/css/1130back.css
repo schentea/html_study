@@ -1,0 +1,22 @@
+body {
+    /* css에서 사용시 여러개의 배경이미지 중첩가능 */
+    background-image: url("../image/1.png"),url("../image/back.jpg");
+
+    /* background-size 속성은 첫번쨰 단위에 넓이 두번째에 높이를 의미 */
+    /* 만약에 쉼표를 사용시 각각의 이미지에 크기를 지정 */
+    background-size: 100% 250px;
+
+    /* repeat속성 사용시 이미지가 패턴을 이룸 */
+    /* 반복없이 이미지 적용 x,y으로 적용하면 x축 y축으로 이미지가 반복 */
+    background-repeat: no-repeat; 
+
+    /* attachment 속성에 fixed 키워드 적용시 이미지가 고정 */
+    background-attachment: fixed;
+
+    /* position 속성 */
+    /* 이미지가 아래쪽에 붙음 */
+    background-position: bottom;
+
+    /* 2개의 값 입력시 각각 x축과 y축 위치 적용 */
+    background-position: 0px 50%;
+}

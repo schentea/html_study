@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin : 0;
+        }
+        li {
+            list-style: none;
+            float : left;
+        }
+        ul {
+            overflow: hidden; /* li에 사용한 float 속성의 부유를 막기 위해 부모인 ul에 overflow : hidden 사용*/
+        }
+        a {
+            text-decoration: none;
+            color : black;
+        }
+        header {
+            background-color: gray;
+            width: 960px;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+        }
+        header #title {
+            background-color: #dddddd;
+            left: 20px;
+            position: absolute;
+            top : 30px
+        }
+        header #main_gnb {
+            position: absolute;
+            right: 0;
+            top : 0;
+        }
+        header #main_gnb a {
+            display: block;
+            padding : 2px 10px;
+            border : 1px solid black;
+            background-color: white;
+        }
+        header #main_gnb li:first-child a {
+            border-radius: 10px 0 0 10px;
+        }
+        header #main_gnb li:last-child a {
+            border-radius: 0 10px 10px 0;
+        }
+        header #main_gnb a:hover {
+            background-color: black;
+            color : white
+        }
+        header #main_lnb {
+            position: absolute;
+            bottom : 10px;
+            right : 0;
+        }
+        header #main_lnb a{
+            display: block;
+            padding : 10px 20px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        header #main_lnb li:first-child a {
+            border-radius: 10px 0 0 10px;
+        }
+        header #main_lnb li:last-child a {
+            border-radius: 0 10px 10px 0;
+        }
+        header #main_lnb a:hover {
+            background-color: black;
+            color : white;
+        }
+        #content {
+            background-color: lightblue;
+            width: 960px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: aliceblue;
+            width: 960px;
+            height: 160px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id ="title">
+            <h1>Rint Development</h1>
+            <h2>HTML5 + CSS3 Basic</h2>
+        </div>
+        <nav id = "main_gnb">
+            <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Moblie</a></li>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Data</a></li>
+            </ul>
+        </nav>
+        <nav id = "main_lnb">
+            <ul>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">Node.js</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id ="content">
+        콘텐츠
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

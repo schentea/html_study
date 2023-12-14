@@ -1,0 +1,83 @@
+input[type=text] { background: red; }
+input[type=password] { background: blue ;}
+img[src$=png] { border : 3px solid red;}
+img[src$=jpg] { border : 3px solid green;}
+img[src$=gif] { border : 3px solid blue;}
+
+/* 3-15 후손 선택자 */
+#header h1 { color : red;}
+#section h1 { color : orange;}
+
+/* 3-18 자손 선택자 */
+#header1 > h1 { color : red;}
+#section1 > h1 { color : orange;}
+
+/* 3-21 동위 선택자 */
+div h1 + h2 { color : red;}
+div h1 ~ h2 { background-color : orange;}
+
+/* 3-22 반응 선택자 */
+#action:hover { color : red;}
+#action:active { color : blue;}
+
+/* 3-24 상태 선택자 */
+#div0 input:enabled { background-color: white;}
+#div0 input:disabled { background-color: gray;}
+#div0 input:focus { background-color: orange;}
+
+/* 3-25 상태 선택자와 동위 선택자의 복합 활용 */
+input[type=checkbox]:checked + #div1 {
+    height : 0px;
+}
+
+#div1 {
+    overflow: hidden;
+    width: 650px; height: 300px;
+    -ms-transition-duration : 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    transition-duration : 1s;
+}
+
+/* 3-26 구조 선택자 */
+ul { overflow : hidden;}
+li {
+    list-style: none;
+    float : left;
+    padding : 15px;
+}
+
+li:first-child{border-radius: 10px 0 0 10px;}
+li:last-child{border-radius: 0 10px 10px 0;}
+
+li:nth-child(2n){ background-color: #FF0003;}
+li:nth-child(2n+1) { background-color: #800000;}
+
+/* 형태 구조 선택자(1) */
+#div2 h1:first-of-type {color : red;}
+#div2 h2:first-of-type {color : red;}
+#div2 h3:first-of-type {color : red;}
+
+/* 형태 구조 선택자(2) */
+#div3 > *:first-of-type {color : red;}
+
+/* 시작 문자 선택자 */
+#div4 p::first-letter {font-size : 3em;}
+#div4 p::first-line { color :red;}
+
+/* 전후 문자 선택자 */
+#div5 p {counter-increment: rint;}
+#div5 p::before {content : counter(rint) ".";}
+#div5 p::after {content: " - " attr(data-page)" page";}
+#div5 p::first-letter { font-size: 3em;}
+
+/* 반응 문자 선택자 */
+#div6 p::selection {background: black; color:red;}
+
+/* 링크 선택자 */
+#div7 a { text-decoration: none;}
+#div7 a:visited{color : red;}
+#div7 a:link:after { content : ' - ' attr(href);}
+
+/* 부정 선택자 */
+#div8 input:not([type=password]) { background: red;}

@@ -1,0 +1,109 @@
+
+div { border : 1px solid black;}
+/* 퍼센트 단위 */
+.one p:nth-child(1){}
+.one p:nth-child(2){ font-size:100%; }
+.one p:nth-child(3){ font-size:150%; }
+.one p:nth-child(4){ font-size:200%; }
+
+/* 배수 단위 */
+.two p:nth-child(1){}
+.two p:nth-child(2){ font-size:1.0em; }
+.two p:nth-child(3){ font-size:1.5em; }
+.two p:nth-child(4){ font-size:2.0em; }
+
+/* 픽셀 단위 */
+.three p:nth-child(1){}
+.three p:nth-child(2){ font-size:16px; }
+.three p:nth-child(3){ font-size:24px; }
+.three p:nth-child(4){ font-size:32px; }
+
+/* 색상 단위 */
+.four h1 { background-color: red;}
+.four h2 { background-color: orange;}
+.four h3 { background-color: blue;}
+.four h4 { background-color: green;}
+.four h5 { background-color: brown;}
+.four h6 { background-color: purple;}
+
+/* HEX 코드 색상 단위 / HSL 색상 선택기 */
+.five h1:nth-child(1){ background-color: #0094FF;}
+.five h1:nth-child(2){ background-color: hsl(33, 100%, 50%);}
+
+/* 백그라운드 이미지 */
+body {background-image: url('/예습/image/popupBack.png');}
+
+/* 가시 속성 */
+#box { display: none;}
+#box2 { display: block;}
+#box3 { 
+    display: inline;
+    background-color: red;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+}
+#box4 { 
+    display: inline-block;
+    background-color: red;
+    width: 300px;
+    height: 50px;
+    margin :10px;
+}
+
+/* visibility */
+#box5 {
+    visibility: hidden;
+}
+
+/* opacity */
+#box6 {
+    background-color: black;
+    color :white;
+    opacity: 0.2;
+}
+
+/* 박스 속성 */
+/* width와 height속성 */
+#six {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+/* margin 과 padding 속성 */
+#seven {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border : 20px solid black;
+    margin : 10px;
+    padding : 30px;
+}
+
+/* margin과 padding 속성에 2개의 값 적용 */
+#eight {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin : 0 30px;
+    padding : 0 30px;
+}
+
+.box7 {
+    border-width: thick;
+}
+
+.box8 { 
+    border : thick dashed black;
+}
+
+.box9 {
+    border : thick dashed black;
+    border-radius: 20px;
+}
+
+.box10 { 
+    border : thick dashed black;
+    border-radius: 50px 40px 20px 10px;
+}

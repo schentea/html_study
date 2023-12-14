@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Tag</title>
+</head>
+<body>
+    <!-- 기본 입력 양식 -->
+    <form>
+        <input type="text" name="search"/>
+        <input type="submit"/>
+    </form>
+
+    <!-- Get과 Post 요청 -->
+    <!-- get 방식은 주소가 변경됨 => 주소에 데이터를 입력해 보내는 방식 -->
+    <form method="get">
+        <input type="text" name="search"/>
+        <input type="submit" />
+    </form>
+
+    <!-- post방식은 주소는 변경되지 않음 => 비밀스럽게 데이터를 전달하는 방식 -->
+    <form method="post">
+        <input type="text" name="search"/>
+        <input type="submit" />
+    </form>
+
+    <br><hr><br>
+
+    <!-- input태그 -->
+    <form>
+        <input type="text" name ="name"/><br />
+        <input type="password" name ="password" /><br />
+        <input type="file" name ="password" /><br />
+        <input type="submit" />
+    </form>
+
+    <br><hr><br>
+
+    <!-- input태그의 기본 type 속성값 -->
+    <form>
+        <p>글자 입력 양식 생성</p>
+        <input type="text" /><br/>
+        <p>버튼 생성</p>
+        <input type="button" /><br/>
+        <p>체크 박스 생성</p>
+        <input type="checkbox" /><br/>
+        <p>파일 입력 양식 생성</p>
+        <input type="file" /><br/>
+        <p>보이지 않음</p>
+        <input type="hidden" /><br/>
+        <p>이미지 형태 생성</p>
+        <input type="image" /><br/>
+        <p>비밀번호 입력 양식 생성</p>
+        <input type="password" /><br/>
+        <p>라디오 버튼 생성</p>
+        <input type="radio" /><br/>
+        <p>초기화 버튼 생성</p>
+        <input type="reset" /><br/>
+        <p>제출 버튼 생성</p>
+        <input type="submit" /><br/>
+    </form>
+
+    <br><hr><br>
+
+    <!-- label 태그의 속성 -->
+    <form>
+        <label for="name">이름</label>
+        <input id = "name" type = "text" />
+    </form>
+
+    <!-- HTML5 입력 양식의 type 속성 -->
+    <form>
+        <input type="color" /><br/> <!-- 색상 선택 양식 생성-->
+        <input type="date" /><br/><!--일 선택 양식 생성-->
+        <input type="datetime" /><br/><!-- 날짜 선택 양식 생성-->
+        <input type="datetime-local" /><br/> <!-- 지역 날짜 선택 양식 생성-->
+        <input type="email" /><br/><!-- 이메일 입력 양식 생성-->
+        <input type="month" /><br/><!--월 선택 양식 생성-->
+        <input type="number" /> <br/> <!-- 숫자 생성 양식 생성-->
+        <input type="range" /><br/> <!-- 범위 선택 양식 생성-->
+        <input type="search" /><br/> <!--검색어 입력 양식 생성-->
+        <input type="tel" /><br/> <!--전화번호 입력 양식 생성-->
+        <input type="time" /><br/><!--시간 선택 양식으 생성-->
+        <input type="url" /><br/><!--URL주소 입력 양식을 생성-->
+        <input type="week" /><br/><!--주 선택 양식을 생성-->
+    </form>
+</body>
+</html>

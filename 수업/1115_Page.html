@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>최현기 Portfolio</title>
+    <style>
+        * { margin : 0; font-weight: bold;}
+        article {
+            line-height: 30px;
+            border : 1px solid black;
+            padding: 40px;
+            background-color: #dddddd;
+            
+        }
+        li {
+            border : 1px solid black;
+            margin-right: -6px;
+            list-style-type : none;
+            display: inline-block;
+            margin-top : 20px;
+            /* border : 1px solid black; */
+            color : #dddddd;
+            font-weight: bold;
+            padding-right: 100px;
+            padding-top : 10px;
+            font-size: 18px;
+        }
+        header { 
+            height : 100px; 
+            text-align: left;
+            background-image: url(./image/3.jpg);
+        }
+        footer {
+            background-color: #5e656b;
+            height : 70px;
+            text-align: center;
+            padding-top: 15px;
+            box-sizing: border-box;
+            /* line-height: 100px; 줄간격을 박스 높이 동일하게 설정*/
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        img {
+            height: 200px;
+            border-radius: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+        #goto-top {
+            position :fixed;
+            right : 10px;   
+            bottom : 10px;
+            border : 1px solid black;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: rgba(50, 50, 50   , 0.5);  /* 투명한 배경색 지정 */
+            border-radius : 8px; /* 둥근 테두리 반지름 설정 */
+        }
+        #goto-top a {
+            color : #dddddd;
+            font-weight: bold;
+        }
+        #link-color {
+            color : #000000;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <a href="#profile"><li>Profile</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#gallery"><li>Gallery</li></a>
+                <a href="#links"><li>Links</li></a>
+                <a href="#board"><li>Board</li></a>
+            </ol>
+        </nav>
+    </header>
+    <div id="content">
+        <article>
+            <h2 id="profile">Profile</h2>
+            - 최현기 <br />
+            - 영진전문대 컴퓨터 정보계열<br />
+            - 영직직업전문학교 재학 중 <br />
+        </article>
+        <article>
+            <h2 id="skills">Skills</h2>
+            - IoT / Raspberry PI<br />
+            - CCNA <br />
+            - Java<br />
+            - Python <br />
+            - Linux Server <br />
+        </article>
+        <article>
+            <h2 id="gallery">Gallery</h2>
+            <img src="./image/rc3.jpg">
+            <img src="./image/rc1.jpg">
+            <img src="./image/rc2.jpg">
+            <img src="./image/rc카.jpg">
+        </article>
+        <article>
+            <h2 id="links">Links</h2>
+            <a href="https://github.com/schentea" target="_blank" id="link-color">- Github <br /></a>
+            <a href="https://www.notion.so/1d54036652f14c7ba0dbd6eaff625b7f" target="_blank" id="link-color">- Notion <br /></a>
+            <a href="https://sikkkkkw.github.io/home/" target="_blank" id="link-color">- 굴러가죠 <br /></a>
+        </article>
+        <article>
+            <h2>Board</h2>
+            <iframe src="http://schentea.dothome.co.kr/gnuboard/bbs/board.php?bo_table=free" width="100%" height="700px" frameborder=0 marginheight="0" marginwidth="5" name="boardframe" scrolling="auto"></iframe>
+        </article>
+    </div>
+    <footer>
+        Copyright, 2023 by Hyeon-gi Choi.<br/> For more information, contact schentea@naver.com
+    </footer>
+    <div id="goto-top">
+        <a href="#">Top</a>
+    </div>
+</body>
+</html>
